@@ -12,6 +12,15 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val map = HashMap<String, Int>().apply {
+            "a" to 1
+            "b" to 1
+            "c" to 1
+//            put("A", 1)
+//            put("B", 2)
+//            put("C", 3)
+        }
+        println(map.toList()[0].first)
+        println(map.toList()[1])
     }
 }
